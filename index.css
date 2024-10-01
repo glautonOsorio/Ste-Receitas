@@ -1,0 +1,16 @@
+:root {
+    --background: #F6B7C1;  
+    --primary: #FFD7BD;     
+    --secondary: #93C6BB;    
+    --tertiary: #BCE7AC;     
+    --text: #4A4A4A;          
+    --text2: #7D7D7D;        
+    --accent: #FFC107;        
+    --success: #28A745;      
+    --warning: #FFC107;       
+    --error: #C82333;        
+  }
+
+  body{
+    background-color: var(--background);
+  }
