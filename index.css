@@ -1,16 +1,20 @@
-:root {
-    --background: #F6B7C1;  
-    --primary: #FFD7BD;     
-    --secondary: #93C6BB;    
-    --tertiary: #BCE7AC;     
-    --text: #4A4A4A;          
-    --text2: #7D7D7D;        
-    --accent: #FFC107;        
-    --success: #28A745;      
-    --warning: #FFC107;       
-    --error: #C82333;        
-  }
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
-  body{
-    background-color: var(--background);
-  }
+:root {
+  --background: #f6b7c1;
+  --primary: #ffd7bd;
+  --secondary: #93c6bb;
+  --tertiary: #bce7ac;
+  --text: #4a4a4a;
+  --text2: #7d7d7d;
+  --accent: #ffc107;
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #c82333;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Dancing Script", system-ui;
+  font-optical-sizing: auto;
+}
