@@ -13,8 +13,7 @@
   --error: #c82333;
 }
 
-/*background-color: var(--background);*/
-body {
+body, #root {
   background: linear-gradient(to bottom right, var(--background), #FFFAF0);
   font-family: "Dancing Script", system-ui;
   font-optical-sizing: auto;

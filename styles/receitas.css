@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 60rem;
+  height: 48rem;
+  border-radius: 2rem;
+  background-color: var(--secondary);
+}
+
+.main-content-tittle-wrapper{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.main-content-tittle-img{
+  width: 35rem;
+  border-radius: 2rem;
+}
+.main-content-text-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-tittle{
+font-size: 2rem;
+color: var(--text);
+}
