@@ -19,7 +19,7 @@
         <ul>
           <li><a href="/index.html">Inicio</a></li>
           <li>
-            <a href="#">Carnes</a>
+            <a href="./pages/lista/lista-receitas-carne.html">Carnes</a>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Receita 1</a></li>
@@ -30,7 +30,7 @@
           </li>
 
           <li>
-            <a href="#">Peixes</a>
+            <a href="./pages/lista/lista-receitas-peixe.html">Peixes</a>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Receita 1</a></li>
@@ -40,7 +40,7 @@
             </div>
           </li>
           <li>
-            <a href="#">Massas</a>
+            <a href="./pages/lista/lista-receitas-massa.html">Massas</a>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Receita 1</a></li>
@@ -51,17 +51,21 @@
           </li>
 
           <li>
-            <a href="#">Molhos</a>
+            <a href="./pages/lista/lista-receitas-molho.html">Molhos</a>
             <div class="sub-menu">
               <ul>
-                <li><a href="./pages/receita-de-molho-branco.html">Receita 1</a></li>
+                <li>
+                  <a href="./pages/receitas/receita-de-molho-branco.html"
+                    >M.Branco</a
+                  >
+                </li>
                 <li><a href="#">Receita 2</a></li>
                 <li><a href="#">Receita 3</a></li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="#">Sobremesas</a>
+            <a href="./pages/lista/lista-receitas-sobremesa.html">Sobremesas</a>
             <div class="sub-menu">
               <ul>
                 <li><a href="#">Receita 1</a></li>
@@ -90,22 +94,27 @@
           class="main-content-img"
           src="./assets/steak-6714964_640.jpg"
           alt="imagem de carne"
+          id="carne"
         /><img
           class="main-content-img"
           src="./assets/sturgeon-8119423_640.jpg"
           alt=" imagem de peixe"
+          id="peixe"
         /><img
           class="main-content-img"
           src="./assets/food-6697395_640.jpg"
           alt="imagem de massa"
+          id="massa"
         /><img
           class="main-content-img"
           src="./assets/tomatoes-1887240_640.jpg"
           alt="imagem de molho"
+          id="molho"
         /><img
           class="main-content-img"
           src="./assets/pancakes-2139844_640.jpg"
           alt="imagem de sobremesa"
+          id="sobremesa"
         />
       </section>
     </main>
@@ -113,5 +122,28 @@
     <footer>
       <span>&copy;2024 Pagina Ste Receitas. Todos os direitos reservados</span>
     </footer>
+    <script>
+      let carneImage = document.getElementById("carne");
+      let peixeImage = document.getElementById("peixe");
+      let massaImage = document.getElementById("massa");
+      let molhoImage = document.getElementById("molho");
+      let sobremesaImage = document.getElementById("sobremesa");
+
+      carneImage.addEventListener("click", (e) => {
+        window.location.href = "./pages/lista/lista-receitas-carne.html";
+      });
+      peixeImage.addEventListener("click", (e) => {
+        window.location.href = "./pages/lista/lista-receitas-peixe.html";
+      });
+      massaImage.addEventListener("click", (e) => {
+        window.location.href = "./pages/lista/lista-receitas-massa.html";
+      });
+      molhoImage.addEventListener("click", (e) => {
+        window.location.href = "./pages/lista/lista-receitas-molho.html";
+      });
+      sobremesaImage.addEventListener("click", (e) => {
+        window.location.href = "./pages/lista/lista-receitas-sobremesa.html";
+      });
+    </script>
   </body>
 </html>

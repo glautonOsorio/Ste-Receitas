@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
-
 .header-container {
   background-color: var(--primary);
   display: flex;
@@ -34,6 +33,7 @@ nav ul li {
   width: 9rem;
   padding: 1rem;
 }
+
 nav ul li a {
   color: var(--text);
   margin: 1rem;
@@ -67,4 +67,46 @@ nav ul li .sub-menu ul {
 nav ul li .sub-menu ul li {
   text-align: center;
   transition: 0.7s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Tablet */
+  .header-title {
+    font-size: 2.5rem; /* Reduz o tamanho da fonte para tablets */
+  }
+
+  nav ul li {
+    width: 7rem; /* Reduz a largura dos itens do menu */
+    padding: 0.8rem; /* Reduz o padding */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte dos links */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Celular */
+  .header-container {
+    flex-direction: column; /* Altera a direção para coluna em celulares */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .header-title {
+    font-size: 2rem; /* Reduz ainda mais o tamanho da fonte */
+  }
+
+  nav ul {
+    flex-direction: column; /* Altera o menu para coluna em celulares */
+  }
+
+  nav ul li {
+    width: auto; /* Ajusta a largura para automática */
+    padding: 0.5rem; /* Reduz o padding */
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Reduz o tamanho da fonte para links */
+  }
 }

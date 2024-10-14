@@ -3,18 +3,21 @@
 :root {
   --background: #f6b7c1;
   --primary: #ffd7bd;
-  --secondary: #93c6bb;
+  --secondary: #fff0f5;
   --tertiary: #bce7ac;
-  --text: #ffffff;
-  --text2: #000000;
+  --text: #333333;
+  --text2: #d9a300;
   --accent: #ffc107;
   --success: #28a745;
   --warning: #ffc107;
   --error: #c82333;
 }
 
-body, #root {
-  background: linear-gradient(to bottom right, var(--background), #FFFAF0);
+body,
+html {
+  background-color: var(--background);
   font-family: "Dancing Script", system-ui;
   font-optical-sizing: auto;
+  width: 100%;
+  height: 100%;
 }

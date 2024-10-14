@@ -25,11 +25,37 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 1rem;
 }
 
-.main-content-img{
-    width: 20rem;
-    border-radius: 2rem;    
+.main-content-img {
+  width: 15rem;
+  border-radius: 2rem;
+  transition: transform 0.2s, width 0.2s;
+  cursor: pointer;
+}
+
+.main-content-img:hover {
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .main-tittle {
+    font-size: 3rem;
+  }
+  .main-subtittle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-tittle {
+    font-size: 1.5rem;
+  }
+  .main-subtittle {
+    font-size: 0.5rem;
+  }
 }

@@ -1,6 +1,5 @@
 .main-container {
   display: flex;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -36,26 +35,38 @@
 
 .main-content-tittle {
   font-size: 3rem;
-  color: var(--text2);
+  color: var(--text);
 }
 
 .main-content-recipe-tittle {
-  font-size: 2rem;
-  color: var(--text );
+  font-size: 2.5rem;
+  color: var(--text2);
   text-decoration: underline;
-  text-decoration-color: var(--accent);
-  
 }
 
-.main-content-recipe-list{
+.main-content-recipe-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: left;  
-
+  text-align: left;
+  list-style-type: decimal;
+  padding: 1.5rem;
 }
 
-.main-content-recipe-list-item{
-font-size: 1.2rem;
-color: var(--text2);
+.main-content-recipe-list-item {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.main-content-recipe-list-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.main-content-recipe-list-row-item {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  color: var(--text);
 }

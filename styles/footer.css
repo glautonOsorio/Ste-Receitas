@@ -2,13 +2,35 @@ footer {
   background-color: var(--primary);
   text-align: start;
   padding: 1rem;
-  width: 100%;
-  position: fixed;
   bottom: 0;
 }
 
 span {
-  color: var(--text2);
+  color: var(--text);
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Tablet */
+  footer {
+    padding: 0.8rem; /* Reduz o padding em tablets */
+  }
+
+  span {
+    font-size: 1rem; /* Reduz o tamanho da fonte em tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Celular */
+  footer {
+    padding: 0.5rem; /* Reduz ainda mais o padding para celulares */
+    text-align: center; /* Centraliza o texto no footer */
+  }
+
+  span {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte em celulares */
+  }
 }
