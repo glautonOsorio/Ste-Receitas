@@ -43,7 +43,7 @@
             <a href="./lista-receitas-massa.html">Massas</a>
             <div class="sub-menu">
               <ul>
-                <li><a href="#">Receita 1</a></li>
+                <li><a href="./receita-de-focaccia.html">Focaccia</a></li>
                 <li><a href="#">Receita 2</a></li>
                 <li><a href="#">Receita 3</a></li>
               </ul>
@@ -78,19 +78,21 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="card-container">
+      <div class="card-container" id="molho-branco">
         <img
           class="card-image"
-          src="../../assets/work-in-progress.webp"
+          src="../../assets/macarrao-molho-branco.jpg"
           alt="work-in-progress"
         />
         <div class="card-text-container">
-          <h1 class="card-tittle">Receita de Molho Work In progress</h1>
+          <h1 class="card-tittle">Molho Branco da Ste</h1>
           <span class="card-subtittle"
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et atque
-            officia ipsa, doloremque, praesentium dolore perspiciatis in
-            eligendi possimus incidunt consectetur accusamus ex velit enim
-            debitis mollitia architecto facilis? Consequatur!
+            >Essa receita de Molho Branco da Ste é simples e deliciosa, perfeita
+            para acompanhar massas. Ela leva ingredientes como cebola, leite,
+            farinha de trigo, manteiga, creme de leite e uma pitada de curry
+            para dar um toque especial. O molho é preparado batendo os
+            ingredientes no liquidificador, depois cozinhando a mistura até
+            ficar cremosa e cheia de sabor.
           </span>
         </div>
       </div>
@@ -130,5 +132,14 @@
     <footer>
       <span>&copy;2024 Pagina Ste Receitas. Todos os direitos reservados</span>
     </footer>
+    <script>
+      let molho = document.getElementById("molho-branco")
+
+      molho.addEventListener("click", ()=>{
+        window.location.href = "../receitas/receita-de-molho-branco.html"
+      })
+
+
+    </script>
   </body>
 </html>

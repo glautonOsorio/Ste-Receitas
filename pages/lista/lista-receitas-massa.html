@@ -43,7 +43,9 @@
             <a href="./lista-receitas-massa.html">Massas</a>
             <div class="sub-menu">
               <ul>
-                <li><a href="#">Receita 1</a></li>
+                <li>
+                  <a href="../receitas/receita-de-focaccia.html">Focaccia</a>
+                </li>
                 <li><a href="#">Receita 2</a></li>
                 <li><a href="#">Receita 3</a></li>
               </ul>
@@ -81,16 +83,17 @@
       <div class="card-container">
         <img
           class="card-image"
-          src="../../assets/work-in-progress.webp"
+          src="../../assets/focaccia.webp"
           alt="work-in-progress"
         />
-        <div class="card-text-container">
-          <h1 class="card-tittle">Receita de Massas Work In progress</h1>
+        <div class="card-text-container" id="focaccia">
+          <h1 class="card-tittle">Focaccia do Glau</h1>
           <span class="card-subtittle"
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et atque
-            officia ipsa, doloremque, praesentium dolore perspiciatis in
-            eligendi possimus incidunt consectetur accusamus ex velit enim
-            debitis mollitia architecto facilis? Consequatur!
+            >Esta focaccia caseira é macia, aromática e fácil de fazer. Com
+            ingredientes simples como farinha, fermento e azeite, a massa é
+            dobrada para ganhar leveza e depois temperada com azeite, alecrim e
+            sal grosso. Assada até dourar, é perfeita para servir como
+            acompanhamento ou saborear sozinha.
           </span>
         </div>
       </div>
@@ -130,5 +133,13 @@
     <footer>
       <span>&copy;2024 Pagina Ste Receitas. Todos os direitos reservados</span>
     </footer>
+    <script>
+       let focaccia = document.getElementById("focaccia")
+
+focaccia.addEventListener("click", ()=>{
+  window.location.href = "../receitas/receita-de-focaccia.html"
+})
+
+    </script>
   </body>
 </html>
